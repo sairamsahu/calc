@@ -1,0 +1,95 @@
+body {
+    font-family: "Spartan", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: hsl(222, 26%, 31%);
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    align-items: center;
+}
+
+.title {
+    font-size: 2rem;
+    color: white;
+    margin-right: 14em;
+}
+
+.container-display {
+    background: hsl(224, 36%, 15%);
+    border-radius: 10px;
+    padding: 1em;
+    width: 100%;
+    max-width: 100%;
+}
+
+.display {
+    font-size: 1.5rem;
+    /* Smaller display */
+    text-align: right;
+    color: white;
+    padding: 0.5em;
+}
+
+.keyboard {
+    background: hsl(223, 31%, 20%);
+    padding: 1.5em;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    width: 100%;
+    max-width: 100%;
+}
+
+.btn {
+    background: hsl(30, 25%, 89%);
+    color: hsl(221, 14%, 31%);
+    font-size: 1.5rem;
+    padding: 1em;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px hsl(28, 16%, 65%);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: white;
+}
+
+.btn-function-key {
+    background: hsl(225, 21%, 49%);
+    color: white;
+    box-shadow: 0 4px hsl(224, 28%, 35%);
+}
+
+.btn-function-key:hover {
+    background: #a2b2e1;
+}
+
+.btn-equal-key {
+    background: hsl(6, 63%, 50%);
+    color: white;
+    grid-column: span 2;
+}
+
+.btn-equal-key:hover {
+    background: #f96b5b;
+}
+
+.btn-reset-key {
+    grid-column: span 2;
+}
